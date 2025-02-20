@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+*{ /* seletor universal */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif; /* fonte usada na pagina */
+}
+
+body{
+    overflow: hidden; /* basicamente serve para que o conteudo nao supere o tamanho de uma "janela" */
+}
+
+.background{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-image: url(sep09.jpg);
+    background-size: cover; /* faz com que a imagem de fundo ocupe a tela inteira */
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;  /* = 16px */ 
+}
+
+.cabeçalho-link{
+    display: flex;
+    gap: 3rem; /*espaçamento entre os conteudos do cabeçalho */
+    font-weight: 300;
+    cursor: pointer;  /* qnd o cursor passar por cima dos conteudos do cabeçalho ele terá forma de "maozinha" */
+}
+
+.cabeçalho-link a{
+    color: #fff;
+    font-size: 12px;
+}
+.cabeçalho-link a:hover{ /* hover é basicamente o cursor do mouse */
+    color: #2ecc71;
+    transition: 0.3s all;
+}
+
+button{
+    color: #fff;
+    background: transparent;
+    border: solid 1px #2ecc71;
+    padding: 5px;
+    border-radius: 15px; /* para arredondar o botao */
+    font-size: 12px;
+    width: 150px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2ecc71;
+    color: #fff;
+    transition: 0.5s;
+}
+
+h1{
+    color: #2ecc71;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 15vh;
+}
+
+p{
+    text-align: center;
+    margin-top: 80px;
+    color: #fff;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+}
+
+#container a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    margin: 100px 50px;
+    height: 50px;
+    color: #fff;
+    border: 1px #2ecc71 solid;
+}
+
+#container a:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    align-items: center;
+    transition: 1.0s;
+    background-color: #2ecc71;
+}

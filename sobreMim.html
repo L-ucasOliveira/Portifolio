@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleSobre.css">
+    <title>Sobre Mim</title>
+</head>
+<body>
+    <div class="background">
+        <header> <!--cabeçalho-->
+            <div class="cabeçalho-link">
+                <li>
+                    <a href="index.html">Tela Inicial</a>
+                </li>
+                <li>
+                    <a href="projetos.html" >Projetos</a>
+                </li>
+                <li>
+                    <a href="sobreMim.html" >Sobre</a>
+                </li>
+                <li>
+                <button onclick="meuContato()">Contate-me</button>
+            </div>
+        </header>
+        <div class="container-texto">
+            <div class="texto">
+                <h1><span>Um pouco sobre mim</span></h1><br>
+                <p>Eu me chamo Lucas, tenho 19 anos, atualmente estou no 2° periodo do curso de Bacharelado em Sistemas de Informação, tenho um curso tecnico finalizado de Desenvolvimento de Sistemas.
+                Este site foi desenvolvido com o intuito de ser um atrativo profissional, uma vez que demonstra um pouco do meu conhecimento em desenvolvimento front-end.
+                    <br> <br> Fique a vontade para experimentar e usufruir dos projetos presentes neste site, o jamboard por sinal é muito divertido, e a calculadora além de bonita e trativa tambem é funcional !!!
+                </p>
+                   <div class="redes-sociais">
+                    <a href="#" onclick="abrirInstagram()"><i class="fa-brands fa-instagram"></i></a> <!-- a tag i serve para destacar algo do restante -->
+                   </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    function meuContato() {
+        window.location.href = "https://api.whatsapp.com/send?phone=5532998264413&text=Sauda%C3%A7%C3%B5es,%20gostaria%20de%20contratar%20seus%20servi%C3%A7os."
+    }
+</script>
+</html>

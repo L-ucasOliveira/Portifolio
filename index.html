@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Portifolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"> <!--logo-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <header>
+            <div class="cabeçalho-link">
+                <li>
+                    <a href="site_DW.html">Tela Inicial</a>
+                </li>
+                <li>
+                    <a href="projetos.html" >Projetos</a>
+                </li>
+                <li>
+                    <a href="sobreMim.html" >Sobre</a>
+                </li>
+                <button onclick="meuContato()">Contate-me</button>
+            </div>
+        </header>
+        <div class="container-texto">
+            <div class="texto">
+                <h3>Olá, pessoal</h3>
+                <h1>Meu nome é <span>Lucas de Paula Oliveira</span></h1>
+                <p>Este é o meu portifolio, através dele você poderá me conhecer melhor e também a alguns projetos desenvolvidos por mim.</p>
+                   <div class="redes-sociais">
+                    <a href="#" onclick="abrirInstagram()"><i class="fa-brands fa-instagram"></i></a>
+                   </div>
+                   <a href="sobreMim.html"><button class="btn">Sobre Mim</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    function abrirInstagram(){
+        window.location.href = "https://www.instagram.com/lucas_oliveira.jf/"
+    }
+
+    function meuContato() {
+        window.location.href = "https://api.whatsapp.com/send?phone=5532998264413&text=Sauda%C3%A7%C3%B5es,%20gostaria%20de%20contratar%20seus%20servi%C3%A7os."
+    }
+</script>
+</html>
